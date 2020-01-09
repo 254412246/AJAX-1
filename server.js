@@ -49,7 +49,7 @@ var server = http.createServer(function (request, response) {
     } else if (path === '/3.html') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
-        response.write(fs.readFileSync('https://254412246.github.io/AJAX-1/public/3.html'))
+        response.write(fs.readFileSync('public/3.html'))
         response.end()
     } else if (path === '/4.xml') {
         response.statusCode = 200
