@@ -46,7 +46,7 @@ var server = http.createServer(function (request, response) {
         response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
         response.write(fs.readFileSync('public/2.js'))
         response.end()
-    } else if (path === 'https://254412246.github.io/3.html') {
+    } else if (path === '/3.html') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
         response.write(fs.readFileSync('public/3.html'))
